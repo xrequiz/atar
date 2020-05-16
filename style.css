@@ -1,0 +1,129 @@
+
+
+#koteret {
+    -webkit-text-stroke-color:rgb(65, 55, 55);
+    -webkit-text-stroke-width: 0.1mm;
+    font-size: 70px;
+color: royalblue ;
+font-family: 'Aldrich';
+text-align: center;
+overflow: auto;
+top:50%;
+left:50%;
+
+}
+
+#finder {
+    font-weight: 900;
+    -webkit-text-stroke-color:rgb(65, 55, 55);
+    -webkit-text-stroke-width: 0.1mm;
+    float: none;
+    font-size: 150px;
+color: lightskyblue ;
+font-family: 'Aldrich';
+text-align: center;
+
+}
+
+
+#slogen{
+    font-family: 'Aldrich';
+    text-align: center;
+    font-size: 50px;
+  top: 90%;
+  
+  }
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+    font-family: 'Aldrich';
+  display: -webkit-box;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px 19px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:white;
+}
+
+.active {
+  background-color: lightblue;
+}
+
+
+#start:before{
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(255,255,255,.5);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: .5;
+  filter: blur(30px);
+  transform: translateX(-130px) skewX(-15deg);
+}
+
+#start:after{
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(255,255,255,.2);
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  filter: blur(30px);
+  transform: translateX(-50px) scaleX(-15deg);
+}
+
+#start:hover:before {
+ transform: translateX(90px) skewX(-15deg);
+  opacity: .6;
+  transition: .9s;
+}
+
+#start:hover:after {
+ transform: translateX(1000px) skewX(-15deg);
+  opacity: 1;
+  transition: .12s;
+}
+#start:hover {
+  background: #338033;
+  cursor: pointer;
+}
+/*thats the green button design*/
+#start { 
+  font-family: 'Aldrich';
+  position: absolute;
+top: 56%;
+left: 44%;
+  background-color: #4CAF50;
+border: none;
+color: white;
+padding: 25px 60px;
+  text-align: center;
+  font-size: 35px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+ 
+
+}
