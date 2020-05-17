@@ -6,99 +6,12 @@ function stop() {
     audio.pause();
 }
 
-//This will play a random sound
-function playRandomSoundRock(){
-
-    //An array to house all of the URLs of your sounds
-   
-    
-    //This line will select a random sound to play out of your provided URLS
-    var random = soundsrock[Math.floor(Math.random()*sounds.length)];
-    
-    //Find the player element that you created and generate an embed file to play the sound within it
- document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" />";
- document.getElementById("disc").innerHTML=random;
- document.getElementById("disc").style.display = "none" ; 
- 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function playRandomSoundHip(){
-
-
-    //An array to house all of the URLs of your sounds
-    
-    //This line will select a random sound to play out of your provided URLS
-    var random = soundshiphop[Math.floor(Math.random()*sounds.length)];
-    
-    //Find the player element that you created and generate an embed file to play the sound within it
- document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" />";
- document.getElementById("disc").innerHTML=random;
- document.getElementById("disc").style.display = "none" ; 
- 
-
-
-}
-
-
-
-function playRandomSoundEdm(){
-
-
-    console.log(soundsedm);
-    //This line will select a random sound to play out of your provided URLS
-   var x = [Math.floor(Math.random()*soundedm.length)];
-    var random = soundsedm[x];
-    
-    //Find the player element that you created and generate an embed file to play the sound within it
- document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" />";
-
- var discover2 = soundsedm[x].substring(0, soundsedm[x].length - 4);
- document.getElementById("disc").innerHTML=discover2;
- document.getElementById("disc").style.display = "none" ; 
- 
- soundsedm.splice(x , 1 );
- console.log(soundsedm);
- 
-        if (soundsedm.length == 0 ){
-
-            document.getElementById("end").innerHTML="Good Game";
-            document.getElementById("end").style.display = "none" ;
-
-        };        
- }
-
-
-
-
-
-
-
-
-
-
 
 
 
 
 //edm
-var soundsedm = [ 
-      
-    "Justin Bieber - Sorry (PURPOSE  - The Movement).mp3",
+var soundsedm = [    "Justin Bieber - Sorry (PURPOSE  - The Movement).mp3",
   
     "Major Lazer & DJ Snake - Lean On (feat. MØ) (Official Music Video).mp3",
 
@@ -186,10 +99,24 @@ var soundsrock = [ "Crossfade - Cold (Official Video).mp3",
 "Creed - Don't Stop Dancing (Official Video).mp3",
 "Breaking Benjamin - The Diary of Jane (Official Video).mp3",
 "3 Doors Down - Kryptonite (Official Video).mp3",
-]
+
+"AC_DC - Back In Black (Official Video) (mp3cut.net).mp3",
+"AC_DC - Highway to Hell (Live At River Plate, December 2009) (mp3cut.net).mp3",
+"Creedence Clearwater Revival - Have You Ever Seen The Rain (mp3cut.net).mp3",
+"Deep Purple - Smoke on the Water (Audio) (mp3cut.net).mp3",
+"Guns N' Roses - Sweet Child O' Mine (Official Music Video) (mp3cut.net).mp3",
+"Judas Priest - Breaking The Law (Official Music Video) (mp3cut.net).mp3",
+"Metallica - Enter Sandman (Official Music Video) (mp3cut.net).mp3",
+"Nirvana - Smells Like Teen Spirit (Official Music Video) (mp3cut.net).mp3",
+"Pink Floyd - Another Brick In The Wall (HQ) (mp3cut.net).mp3",
+"Queen – Bohemian Rhapsody (Official Video Remastered) (mp3cut.net),mp3",
+"Red Hot Chili Peppers - Under The Bridge (mp3cut.net).mp3",
+"Scorpions - Wind Of Change (Official Music Video) (mp3cut.net).mp3",
+"Steppenwolf - Born To Be Wild (mp3cut.net).mp3",
+"Uriah Heep - Lady in black (mp3cut.net).mp3",
 
 
-;
+];
 
 
 
@@ -256,6 +183,98 @@ function playRandomSoundTrap(){
 
  
 
+ function playRandomSoundEdm(){
+
+
+    console.log(soundsedm);
+   
+   var x = [Math.floor(Math.random()*soundsedm.length)];
+   var random = soundsedm[x];
+   
+   //Find the player element that you created and generate an embed file to play the sound within it
+document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" />";
+
+var discover1 = soundsedm[x].substring(0, soundsedm[x].length - 4);
+document.getElementById("disc").innerHTML=discover1;
+document.getElementById("disc").style.display = "none" ; 
+
+soundsedm.splice(x , 1 );
+console.log(soundsedm);
+
+       if (soundsedm.length == 0 ){
+
+           document.getElementById("end").innerHTML="Good Game";
+           document.getElementById("end").style.display = "none" ;
+
+       };        
+}
+
+ 
+
+
+
+
+//This will play a random sound
+function playRandomSoundRock(){
+
+    console.log(soundsrock);
+   
+   var x = [Math.floor(Math.random()*soundsrock.length)];
+   var random = soundsrock[x];
+   
+   //Find the player element that you created and generate an embed file to play the sound within it
+document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" />";
+
+var discover1 = soundsrock[x].substring(0, soundsrock[x].length - 4);
+document.getElementById("disc").innerHTML=discover1;
+document.getElementById("disc").style.display = "none" ; 
+
+soundsrock.splice(x , 1 );
+console.log(soundsrock);
+
+       if (soundsrock.length == 0 ){
+
+           document.getElementById("end").innerHTML="Good Game";
+           document.getElementById("end").style.display = "none" ;
+
+       };        
+}
+
+
+
+
+
+
+
+function playRandomSoundHip(){
+
+
+    console.log(soundshiphop);
+   
+   var x = [Math.floor(Math.random()*soundshiphop.length)];
+   var random = soundshiphop[x];
+   
+   //Find the player element that you created and generate an embed file to play the sound within it
+document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" />";
+
+var discover1 = soundshiphop[x].substring(0, soundshiphop[x].length - 4);
+document.getElementById("disc").innerHTML=discover1;
+document.getElementById("disc").style.display = "none" ; 
+
+soundshiphop.splice(x , 1 );
+console.log(soundshiphop);
+
+       if (soundshiphop.length == 0 ){
+
+           document.getElementById("end").innerHTML="Good Game";
+           document.getElementById("end").style.display = "none" ;
+
+
+       };        
+}
+
+
+
 
 
 
@@ -265,6 +284,7 @@ function playRandomSoundTrap(){
      document.getElementById("disc").style.display = "block" ;
  
  }
+
 
 
  //lasot txt shel ha shirim -> lekasher 
