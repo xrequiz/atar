@@ -85,6 +85,29 @@ body {
     font-size: 35px;
       }
      
+p , #end {
+  color: rgb(177, 30, 30) ;
+
+  font-family: 'Anton';
+  position: absolute;
+top:-10%;
+left: 15%;
+font-size: 250px;
+-webkit-text-stroke-color:rgb(255, 255, 255);
+-webkit-text-stroke-width: 0.6mm;
+}
+
+#end2 {
+  color: rgb(209, 134, 35) ;
+
+  font-family: 'Anton';
+  position: absolute;
+top: 50%;
+left: 19%;
+font-size: 98px;
+-webkit-text-stroke-color:rgb(255, 255, 255);
+-webkit-text-stroke-width: 0.4mm;
+}
 
 
       #discover {

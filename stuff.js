@@ -178,41 +178,42 @@ var soundstrap = [
 
 
 function playRandomSoundTrap(){
-
-
-    //An array to house all of the URLs of your sounds
-    
-
-
-                  
-
-                   console.log(soundstrap);
-    //This line will select a random sound to play out of your provided URLS
-   var x = [Math.floor(Math.random()*soundstrap.length)];
-    var random = soundstrap[x];
-    
-    //Find the player element that you created and generate an embed file to play the sound within it
- document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" />";
-
- var discover1 = soundstrap[x].substring(0, soundstrap[x].length - 4);
- document.getElementById("disc").innerHTML=discover1;
- document.getElementById("disc").style.display = "none" ; 
- 
- soundstrap.splice(x , 1 );
- console.log(soundstrap);
- 
-        if (soundstrap.length == 0 ){
-
+    document.getElementById("end").style.display = "none" ;
+        if (soundstrap.length !== 0 ) {
+           
+            console.log(soundstrap);
+            //This line will select a random sound to play out of your provided URLS
+           var x = [Math.floor(Math.random()*soundstrap.length)];
+            var random = soundstrap[x];
+            
+            //Find the player element that you created and generate an embed file to play the sound within it
+         document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" />";
+        
+         var discover1 = soundstrap[x].substring(0, soundstrap[x].length - 4);
+         document.getElementById("disc").innerHTML=discover1;
+         document.getElementById("disc").style.display = "none" ; 
+         
+         soundstrap.splice(x , 1 );
+         console.log(soundstrap);
+         
+                
+                  } else {
             document.getElementById("end").innerHTML="Good Game";
-            document.getElementById("end").style.display = "none" ;
+            document.getElementById("end2").innerHTML="Choose Another Category";
+            document.getElementById("end").style.display = "block" ;
+            document.getElementById("end2").style.display = "block" ;
+            document.getElementById("player").style.display = "none" ;
+            document.getElementById("sound").style.display = "none" ;
+            document.getElementById("discover").style.display = "none" ;
 
-        };        
+          }     
  }
 
  
 
  function playRandomSoundEdm(){
-
+    document.getElementById("end").style.display = "none" ;
+    if (soundsedm.length !== 0 ) {
 
     console.log(soundsedm);
    
@@ -229,12 +230,16 @@ document.getElementById("disc").style.display = "none" ;
 soundsedm.splice(x , 1 );
 console.log(soundsedm);
 
-       if (soundsedm.length == 0 ){
+} else {
+    document.getElementById("end").innerHTML="Good Game";
+    document.getElementById("end2").innerHTML="Choose Another Category";
+    document.getElementById("end").style.display = "block" ;
+    document.getElementById("end2").style.display = "block" ;
+    document.getElementById("player").style.display = "none" ;
+    document.getElementById("sound").style.display = "none" ;
+    document.getElementById("discover").style.display = "none" ;
 
-           document.getElementById("end").innerHTML="Good Game";
-           document.getElementById("end").style.display = "none" ;
-
-       };        
+  }     
 }
 
  
@@ -244,6 +249,9 @@ console.log(soundsedm);
 
 //This will play a random sound
 function playRandomSoundRock(){
+
+    document.getElementById("end").style.display = "none" ;
+    if (soundsrock.length !== 0 ) {
 
     console.log(soundsrock);
    
@@ -260,12 +268,16 @@ document.getElementById("disc").style.display = "none" ;
 soundsrock.splice(x , 1 );
 console.log(soundsrock);
 
-       if (soundsrock.length == 0 ){
+} else {
+    document.getElementById("end").innerHTML="Good Game";
+    document.getElementById("end2").innerHTML="Choose Another Category";
+    document.getElementById("end").style.display = "block" ;
+    document.getElementById("end2").style.display = "block" ;
+    document.getElementById("player").style.display = "none" ;
+    document.getElementById("sound").style.display = "none" ;
+    document.getElementById("discover").style.display = "none" ;
 
-           document.getElementById("end").innerHTML="Good Game";
-           document.getElementById("end").style.display = "none" ;
-
-       };        
+  }           
 }
 
 
@@ -275,7 +287,8 @@ console.log(soundsrock);
 
 
 function playRandomSoundHip(){
-
+    document.getElementById("end").style.display = "none" ;
+    if (soundshiphop.length !== 0 ) {
 
     console.log(soundshiphop);
    
@@ -292,13 +305,16 @@ document.getElementById("disc").style.display = "none" ;
 soundshiphop.splice(x , 1 );
 console.log(soundshiphop);
 
-       if (soundshiphop.length == 0 ){
+} else {
+    document.getElementById("end").innerHTML="Good Game";
+    document.getElementById("end2").innerHTML="Choose Another Category";
+    document.getElementById("end").style.display = "block" ;
+    document.getElementById("end2").style.display = "block" ;
+    document.getElementById("player").style.display = "none" ;
+    document.getElementById("sound").style.display = "none" ;
+    document.getElementById("discover").style.display = "none" ;
 
-           document.getElementById("end").innerHTML="Good Game";
-           document.getElementById("end").style.display = "none" ;
-
-
-       };        
+  }           
 }
 
 
