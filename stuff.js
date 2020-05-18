@@ -15,35 +15,82 @@ var soundsedm = [    "Justin Bieber - Sorry (PURPOSE  - The Movement).mp3",
   
     "Major Lazer & DJ Snake - Lean On (feat. MØ) (Official Music Video).mp3",
 
-   
     "Alan Walker - Faded.mp3",
-   
-    
-
   
     "The Chainsmokers - Closer (Lyric) ft. Halsey.mp3",
     
     "Calvin Harris - This Is What You Came For (Official Video) ft. Rihanna.mp3",
-    
 
     "Clean Bandit - Rockabye (feat. Sean Paul & Anne-Marie) [Official Video].mp3",
    
-   
     "Avicii - Wake Me Up (Official Video).mp3",
-    
     "JOYRYDE - THRILL ft MAJILLA [official video].mp3",
-    
     "The Chainsmokers & Coldplay - Something Just Like This (Lyric).mp3",
-    
-    
     "Calvin Harris - Summer (Official Video).mp3",
-    
     "David Guetta - Hey Mama (Official Video) ft Nicki Minaj, Bebe Rexha & Afrojack.mp3",
-  
     "Calvin Harris & Disciples - How Deep Is Your Love.mp3",
-    
     "David Guetta - Titanium ft. Sia (Official Video).mp3",
                
+    "Afrojack & Martin Garrix - Turn Up The Speakers (Official Music Video) (mp3cut.net).mp3",
+    "Avicii - Levels (mp3cut.net).mp3",
+    "Axwell Λ Ingrosso - Sun Is Shining (Official Music Video) (mp3cut.net).mp3",
+    "Calvin Harris - Feel So Close (Official Video) (mp3cut.net).mp3",
+    "David Guetta - Just One Last Time ft (mp3cut.net).mp3",
+    "David Guetta - Shot Me Down ft (mp3cut.net).mp3",
+    "David Guetta & Showtek - Bad ft (mp3cut.net).mp3",
+    "Dimitri Vegas, Martin Garrix, Like Mike - Tremor (Official Music Video) (mp3cut.net).mp3",
+    "Dimitri Vegas, MOGUAI & Like Mike - Mammoth (Original Mix) (mp3cut.net).mp3",
+    "Edward Maya & Vika Jigulina - Stereo Love (Official Music Video) (mp3cut.net).mp3",
+    "Lana Del Rey vs Cedric Gervais 'Summertime Sadness' Remix (mp3cut.net).mp3",
+    "Martin Garrix - Animals (Official Video) (mp3cut.net).mp3",
+    "Martin Garrix & Jay Hardway - Wizard (Official Music Video) (mp3cut.net).mp3",
+    "Nicky Romero - Toulouse (mp3cut.net).mp3",
+    "Showtek - We Like To Party (Original Mix) (mp3cut.net).mp3",
+    "Swedish House Mafia - One (Your Name) (Official Video) (mp3cut.net).mp3",
+    "Swedish House Mafia - Dont worry child (mp3cut.net).mp3",
+    "Zedd - Clarity ft (mp3cut.net).mp3",
+
+
+
+    "Afrojack - Ten Feet Tall (Official Lyric Video) ft (mp3cut.net).mp3",	
+    "Afrojack, Spree Wilson - The Spark (Official Music Video) ft (mp3cut.net).mp3",	
+    "Alan Walker, Sabrina Carpenter & Farruko - On My Way (mp3cut.net).mp3",	
+    "Avicii - Hey Brother (mp3cut.net).mp3",	
+    "Avicii - You Make Me (mp3cut.net).mp3",	
+    "Avicii & Sebastien Drums - My Feelings For You (Official Music Video) (mp3cut.net).mp3",	
+"Avicii vs Nicky Romero - I Could Be The One (Nicktim) (mp3cut.net).mp3	",
+"Calvin Harris - Outside (Official Video) ft (mp3cut.net).mp3	",
+"Calvin Harris & Alesso - Under Control (Official Video) ft (mp3cut.net).mp3	",
+"Calvin Harris, Rag'n'Bone Man - Giant (Official Video) (mp3cut.net).mp3	",
+"David Guetta - Lovers On The Sun (Lyrics Video) ft Sam Martin (mp3cut.net).mp3	",
+"David Guetta ft Justin Bieber - 2U (The Victoria’s Secret Angels Lip Sync) (mp3cut.net).mp3 ",	
+"deadmau5 feat (mp3cut.net).mp3	",
+"Felix Jaehn - Ain't Nobody (Loves Me Better) (Official Video) ft (mp3cut.net).mp3	",
+"Flo Rida - Wild Ones ft (mp3cut.net).mp3	",
+"Hadouken! - Midnight (Original Mix) (mp3cut.net).mp3	",
+"Hardwell - Spaceman (Original Mix) (mp3cut.net).mp3	",
+"Ivan Gough & Feenixpawl ft (mp3cut.net).mp3	",
+"Jonas Blue - Rise ft (mp3cut.net).mp3	",
+"K-391 & Alan Walker - Ignite (feat (mp3cut.net).mp3	",
+"Kygo - Stole The Show feat (mp3cut.net).mp3	",
+"Madeon - Finale (mp3cut.net).mp3	",
+"Mr (mp3cut.net).mp3	",
+"Nicki Minaj - Starships (Explicit) (mp3cut.net).mp3",	
+"Robin Schulz - Sugar (feat (mp3cut.net).mp3	",
+"Rudimental - These Days feat (mp3cut.net).mp3	",
+"Sebastian Ingrosso, Tommy Trash, John Martin - Reload (Official Video) (mp3cut.net).mp3	",
+"Selena Gomez, Marshmello - Wolves (mp3cut.net).mp3	",
+"Starkillers, Dmitry KO & Amba Shepherd - Let The Love (Official Music Video) [OUT NOW] (mp3cut.net).mp3	",
+"Swedish House Mafia - Greyhound (Original Mix) (mp3cut.net).mp3	",
+"Swedish House Mafia - Miami 2 Ibiza ft (mp3cut.net).mp3	",
+"Swedish House Mafia vs (mp3cut.net).mp3	",
+"The Chainsmokers - Sick Boy (Official Music Video) (mp3cut.net).mp3	",
+"TJR - Ode To Oi (Original Mix) (mp3cut.net).mp3	",
+"Yolanda Be Cool - We No Speak Americano (Video edit by Pink louder) (mp3cut.net).mp3	",
+"Zara Larsson, MNEK - Never Forget You (Official Music Video) (mp3cut.net).mp3	",
+"Zedd, Alessia Cara - Stay (Official Music Video) (mp3cut.net).mp3",
+
+
                ];
 
 
