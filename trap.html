@@ -15,18 +15,28 @@
     <li><a class="active" href="game.html"> Back</a></li>
 
 
-    <input id="sound" type='button' value='Try To Guess The Song' onclick='playRandomSoundTrap();' />
-    <span id='player'></span>
+    <input id="sound" type='button' value='Take A Guess' onclick='playRandomSoundTrap();' />
+    <audio id="player" controls autoplay > 
+        <source >  
+    
+    </audio>
    
     <p id = "disc" >  </p>
-    <input id="discover" type='button' value='Discover ' onclick='discover();' /> 
+    <input id="discover" type='button' value='Reveal The Answer ' onclick='discover();' /> 
     
+<button id=" name1" class="names"> name 1 </button>
+<button id="name2" class="names"> Name 2 </button>
+<button id="name3" class="names"> name 3</button>
+<button id="name4" class="names"> name 4</button>
+
+
+
     <p id = "end" >  </p>
     <p id = "end2" class ="disc" >  </p>
 
 
    <script src=stuff.js> 
-   
+  
     </script>
 </body>
 </html>

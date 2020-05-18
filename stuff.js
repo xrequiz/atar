@@ -185,9 +185,10 @@ function playRandomSoundTrap(){
             //This line will select a random sound to play out of your provided URLS
            var x = [Math.floor(Math.random()*soundstrap.length)];
             var random = soundstrap[x];
-            
+            var audio = document.getElementById('player');
+            audio.src = random;
             //Find the player element that you created and generate an embed file to play the sound within it
-         document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" />";
+        // document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" type=\"audio/mpeg\" >";
         
          var discover1 = soundstrap[x].substring(0, soundstrap[x].length - 4);
          document.getElementById("disc").innerHTML=discover1;
@@ -195,8 +196,11 @@ function playRandomSoundTrap(){
          
          soundstrap.splice(x , 1 );
          console.log(soundstrap);
-         
-                
+         document.getElementById("sound").value="Next Song";
+         document.getElementById("sound").style.left =" 36% ";
+        
+         //document.getElementById('player').volume=.5;
+        
                   } else {
             document.getElementById("end").innerHTML="Good Game";
             document.getElementById("end2").innerHTML="Choose Another Category";
@@ -205,41 +209,72 @@ function playRandomSoundTrap(){
             document.getElementById("player").style.display = "none" ;
             document.getElementById("sound").style.display = "none" ;
             document.getElementById("discover").style.display = "none" ;
-
+            document.getElementById("disc").style.display = "none" ;
           }     
+      
  }
+ 
+ 
+ 
+ 
+ window.onkeydown = function (event) {
+  
+  if (event.keyCode === 32) {
+    event.preventDefault();
+   
+     var audio =  document.getElementById("player");
 
+      audio.pause();
+     
+  }   
+};
  
 
+
+  
+
+
+
+
+
+
+
+
  function playRandomSoundEdm(){
-    document.getElementById("end").style.display = "none" ;
-    if (soundsedm.length !== 0 ) {
-
-    console.log(soundsedm);
+  document.getElementById("end").style.display = "none" ;
+  if (soundsedm.length !== 0 ) {
+     
+      console.log(soundsedm);
+      //This line will select a random sound to play out of your provided URLS
+     var x = [Math.floor(Math.random()*soundsedm.length)];
+      var random = soundsedm[x];
+      var audio = document.getElementById('player');
+      audio.src = random;
+      //Find the player element that you created and generate an embed file to play the sound within it
+  // document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" type=\"audio/mpeg\" >";
+  
+   var discover1 = soundsedm[x].substring(0, soundsedm[x].length - 4);
+   document.getElementById("disc").innerHTML=discover1;
+   document.getElementById("disc").style.display = "none" ; 
    
-   var x = [Math.floor(Math.random()*soundsedm.length)];
-   var random = soundsedm[x];
-   
-   //Find the player element that you created and generate an embed file to play the sound within it
-document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" />";
+   soundsedm.splice(x , 1 );
+   console.log(soundsedm);
+   document.getElementById("sound").value="Next Song";
+   document.getElementById("sound").style.left =" 36% ";
+  
+   //document.getElementById('player').volume=.5;
+  
+            } else {
+      document.getElementById("end").innerHTML="Good Game";
+      document.getElementById("end2").innerHTML="Choose Another Category";
+      document.getElementById("end").style.display = "block" ;
+      document.getElementById("end2").style.display = "block" ;
+      document.getElementById("player").style.display = "none" ;
+      document.getElementById("sound").style.display = "none" ;
+      document.getElementById("discover").style.display = "none" ;
+      document.getElementById("disc").style.display = "none" ;
+    }     
 
-var discover1 = soundsedm[x].substring(0, soundsedm[x].length - 4);
-document.getElementById("disc").innerHTML=discover1;
-document.getElementById("disc").style.display = "none" ; 
-
-soundsedm.splice(x , 1 );
-console.log(soundsedm);
-
-} else {
-    document.getElementById("end").innerHTML="Good Game";
-    document.getElementById("end2").innerHTML="Choose Another Category";
-    document.getElementById("end").style.display = "block" ;
-    document.getElementById("end2").style.display = "block" ;
-    document.getElementById("player").style.display = "none" ;
-    document.getElementById("sound").style.display = "none" ;
-    document.getElementById("discover").style.display = "none" ;
-
-  }     
 }
 
  
@@ -250,34 +285,40 @@ console.log(soundsedm);
 //This will play a random sound
 function playRandomSoundRock(){
 
-    document.getElementById("end").style.display = "none" ;
-    if (soundsrock.length !== 0 ) {
-
-    console.log(soundsrock);
+  document.getElementById("end").style.display = "none" ;
+  if (soundsrock.length !== 0 ) {
+     
+      console.log(soundsrock);
+      //This line will select a random sound to play out of your provided URLS
+     var x = [Math.floor(Math.random()*soundsrock.length)];
+      var random = soundsrock[x];
+      var audio = document.getElementById('player');
+      audio.src = random;
+      //Find the player element that you created and generate an embed file to play the sound within it
+  // document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" type=\"audio/mpeg\" >";
+  
+   var discover1 = soundsrock[x].substring(0, soundsrock[x].length - 4);
+   document.getElementById("disc").innerHTML=discover1;
+   document.getElementById("disc").style.display = "none" ; 
    
-   var x = [Math.floor(Math.random()*soundsrock.length)];
-   var random = soundsrock[x];
-   
-   //Find the player element that you created and generate an embed file to play the sound within it
-document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" />";
+   soundsrock.splice(x , 1 );
+   console.log(soundsrock);
+   document.getElementById("sound").value="Next Song";
+   document.getElementById("sound").style.left =" 36% ";
+  
+   //document.getElementById('player').volume=.5;
+  
+            } else {
+      document.getElementById("end").innerHTML="Good Game";
+      document.getElementById("end2").innerHTML="Choose Another Category";
+      document.getElementById("end").style.display = "block" ;
+      document.getElementById("end2").style.display = "block" ;
+      document.getElementById("player").style.display = "none" ;
+      document.getElementById("sound").style.display = "none" ;
+      document.getElementById("discover").style.display = "none" ;
+      document.getElementById("disc").style.display = "none" ;
+    }     
 
-var discover1 = soundsrock[x].substring(0, soundsrock[x].length - 4);
-document.getElementById("disc").innerHTML=discover1;
-document.getElementById("disc").style.display = "none" ; 
-
-soundsrock.splice(x , 1 );
-console.log(soundsrock);
-
-} else {
-    document.getElementById("end").innerHTML="Good Game";
-    document.getElementById("end2").innerHTML="Choose Another Category";
-    document.getElementById("end").style.display = "block" ;
-    document.getElementById("end2").style.display = "block" ;
-    document.getElementById("player").style.display = "none" ;
-    document.getElementById("sound").style.display = "none" ;
-    document.getElementById("discover").style.display = "none" ;
-
-  }           
 }
 
 
@@ -286,35 +327,42 @@ console.log(soundsrock);
 
 
 
+
 function playRandomSoundHip(){
-    document.getElementById("end").style.display = "none" ;
-    if (soundshiphop.length !== 0 ) {
-
-    console.log(soundshiphop);
+  document.getElementById("end").style.display = "none" ;
+  if (soundshiphop.length !== 0 ) {
+     
+      console.log(soundshiphop);
+      //This line will select a random sound to play out of your provided URLS
+     var x = [Math.floor(Math.random()*soundshiphop.length)];
+      var random = soundshiphop[x];
+      var audio = document.getElementById('player');
+      audio.src = random;
+      //Find the player element that you created and generate an embed file to play the sound within it
+  // document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" type=\"audio/mpeg\" >";
+  
+   var discover1 = soundshiphop[x].substring(0, soundshiphop[x].length - 4);
+   document.getElementById("disc").innerHTML=discover1;
+   document.getElementById("disc").style.display = "none" ; 
    
-   var x = [Math.floor(Math.random()*soundshiphop.length)];
-   var random = soundshiphop[x];
-   
-   //Find the player element that you created and generate an embed file to play the sound within it
-document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" />";
+   soundshiphop.splice(x , 1 );
+   console.log(soundshiphop);
+   document.getElementById("sound").value="Next Song";
+   document.getElementById("sound").style.left =" 36% ";
+  
+   //document.getElementById('player').volume=.5;
+  
+            } else {
+      document.getElementById("end").innerHTML="Good Game";
+      document.getElementById("end2").innerHTML="Choose Another Category";
+      document.getElementById("end").style.display = "block" ;
+      document.getElementById("end2").style.display = "block" ;
+      document.getElementById("player").style.display = "none" ;
+      document.getElementById("sound").style.display = "none" ;
+      document.getElementById("discover").style.display = "none" ;
+      document.getElementById("disc").style.display = "none" ;
+    }     
 
-var discover1 = soundshiphop[x].substring(0, soundshiphop[x].length - 4);
-document.getElementById("disc").innerHTML=discover1;
-document.getElementById("disc").style.display = "none" ; 
-
-soundshiphop.splice(x , 1 );
-console.log(soundshiphop);
-
-} else {
-    document.getElementById("end").innerHTML="Good Game";
-    document.getElementById("end2").innerHTML="Choose Another Category";
-    document.getElementById("end").style.display = "block" ;
-    document.getElementById("end2").style.display = "block" ;
-    document.getElementById("player").style.display = "none" ;
-    document.getElementById("sound").style.display = "none" ;
-    document.getElementById("discover").style.display = "none" ;
-
-  }           
 }
 
 
@@ -331,5 +379,4 @@ console.log(soundshiphop);
 
 
 
- //lasot txt shel ha shirim -> lekasher 
- //initialize ba code? 
+ //lasot txt shel ha shirim -> lekasher
