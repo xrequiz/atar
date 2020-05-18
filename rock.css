@@ -75,7 +75,7 @@ body {
         left: 11%;
       }
 
-      p , .disc{
+      #disc{
         color: rgb(204, 216, 223) ;
 
         font-family: 'Anton';
@@ -85,7 +85,7 @@ body {
     font-size: 35px;
       }
      
-p , #end {
+#end {
   color: rgb(177, 30, 30) ;
 
   font-family: 'Anton';
