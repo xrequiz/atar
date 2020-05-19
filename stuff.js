@@ -2,9 +2,7 @@
 
  
 
-function stop() {
-    audio.pause();
-}
+
 
 
 
@@ -186,7 +184,7 @@ function playRandomSoundTrap(){
            var x = [Math.floor(Math.random()*soundstrap.length)];
             var random = soundstrap[x];
             var audio = document.getElementById('player');
-            audio.src = random;
+            audio.src = "/trap/" + random;
             //Find the player element that you created and generate an embed file to play the sound within it
         // document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" type=\"audio/mpeg\" >";
         
@@ -249,7 +247,7 @@ function playRandomSoundTrap(){
      var x = [Math.floor(Math.random()*soundsedm.length)];
       var random = soundsedm[x];
       var audio = document.getElementById('player');
-      audio.src = random;
+      audio.src ="/edm/" + random;
       //Find the player element that you created and generate an embed file to play the sound within it
   // document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" type=\"audio/mpeg\" >";
   
@@ -293,7 +291,7 @@ function playRandomSoundRock(){
      var x = [Math.floor(Math.random()*soundsrock.length)];
       var random = soundsrock[x];
       var audio = document.getElementById('player');
-      audio.src = random;
+      audio.src = "/rock/" + random;
       //Find the player element that you created and generate an embed file to play the sound within it
   // document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" type=\"audio/mpeg\" >";
   
@@ -337,7 +335,7 @@ function playRandomSoundHip(){
      var x = [Math.floor(Math.random()*soundshiphop.length)];
       var random = soundshiphop[x];
       var audio = document.getElementById('player');
-      audio.src = random;
+      audio.src = "/hiphop/" + random;
       //Find the player element that you created and generate an embed file to play the sound within it
   // document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" type=\"audio/mpeg\" >";
   
@@ -378,5 +376,45 @@ function playRandomSoundHip(){
  }
 
 
+ var scorex1 = 0;
+function score1(){
 
+    scorex1=scorex1 + 1;
+        document.getElementById("namek1").innerHTML=scorex1;
+
+}
+
+var scorex2 = 0;
+function score2(){
+
+    scorex2=scorex2 + 1;
+        document.getElementById("namek2").innerHTML=scorex2;
+    
+}
+
+var scorex3 = 0;
+function score3(){
+
+        scorex3=scorex3 + 1;
+            document.getElementById("namek3").innerHTML=scorex3;
+        
+}
+
+var scorex4 = 0;
+function score4(){
+
+            scorex4=scorex4 + 1;
+                document.getElementById("namek4").innerHTML=scorex4;
+            
+}
  //lasot txt shel ha shirim -> lekasher
+
+
+ function login1(){
+    
+    var input = document.getElementById("form1").value;
+    
+    //document.getElementById("namek1").innerHTML=y;
+    console.log(input);
+    console.log("worked");
+ }

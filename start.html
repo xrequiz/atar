@@ -3,6 +3,7 @@
 <head>
     
     <link href="game.css"  rel ="stylesheet" type ="text/css">
+
     <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
@@ -18,22 +19,21 @@
  <br> <h1 id="koteret" > Registration </h1>  
 
 
-<form> Player 1 : <input type="text" required> <br> <br>
-    <form> Player 2 : <input type="text" required>  <br> <br>
-    <form> Player 3 : <input type="text" required>
+<form> Player 1 : <input id="form1" type="text" required > <br> <br>
+     Player 2 : <input type="text" required>  <br> <br>
+     Player 3 : <input type="text" required>
 
 </form>
  
 <!-- asdad aasda -->
 <audio autoplay id="music" >
 
-    <source src="bgmusic.mpeg" type="audio/mpeg">
+    <source src="bg/bgmusic.mpeg" type="audio/mpeg">
   Your browser does not support the audio element.
   </audio> 
 
-  <button  id="start" type="submit"   onclick="window.location.href = 'start.html';" onclick="stop()" > Start </button>
+  <button  id="start" type="submit"   onclick="window.location.href = 'game.html';" onclick="stop()"  onclick= 'register1();' > Start </button>
 
-  <button id="start" onclick="window.location.href = 'game.html';">Start</button>
   <script src=stuff.js> 
 </script>
 </body>
