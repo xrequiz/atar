@@ -184,7 +184,7 @@ function playRandomSoundTrap(){
            var x = [Math.floor(Math.random()*soundstrap.length)];
             var random = soundstrap[x];
             var audio = document.getElementById('player');
-            audio.src = "/trap/" + random;
+            audio.src =  random;
             //Find the player element that you created and generate an embed file to play the sound within it
         // document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" type=\"audio/mpeg\" >";
         
@@ -247,7 +247,7 @@ function playRandomSoundTrap(){
      var x = [Math.floor(Math.random()*soundsedm.length)];
       var random = soundsedm[x];
       var audio = document.getElementById('player');
-      audio.src ="/edm/" + random;
+      audio.src =random;
       //Find the player element that you created and generate an embed file to play the sound within it
   // document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" type=\"audio/mpeg\" >";
   
@@ -291,7 +291,7 @@ function playRandomSoundRock(){
      var x = [Math.floor(Math.random()*soundsrock.length)];
       var random = soundsrock[x];
       var audio = document.getElementById('player');
-      audio.src = "/rock/" + random;
+      audio.src = random;
       //Find the player element that you created and generate an embed file to play the sound within it
   // document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" type=\"audio/mpeg\" >";
   
@@ -335,7 +335,7 @@ function playRandomSoundHip(){
      var x = [Math.floor(Math.random()*soundshiphop.length)];
       var random = soundshiphop[x];
       var audio = document.getElementById('player');
-      audio.src = "/hiphop/" + random;
+      audio.src = random;
       //Find the player element that you created and generate an embed file to play the sound within it
   // document.getElementById("player").innerHTML="<embed src=\""+random+"\" loop=\"false\" type=\"audio/mpeg\" >";
   
